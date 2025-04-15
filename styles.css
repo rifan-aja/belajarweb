@@ -1,0 +1,33 @@
+p {
+    font-family: 'Winky Rough';
+}
+
+.judul > p {
+    font-size: 30pt;
+    margin: 0;
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1 > img, .cont2 > img {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.heroname {
+    font-weight: 500;
+    font-size: 12pt;
+    display: inline-block;
+    margin: 0;
+}
+
+.desc {
+    margin: 0;
+    font-weight: 300;
+    display: block;
+}
