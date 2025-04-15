@@ -1,33 +1,54 @@
 p {
-    font-family: 'Winky Rough';
-}
-
-.judul > p {
-    font-size: 30pt;
+    font-family: "Winky Rough";
     margin: 0;
-    font-weight: 700;
+}
+.judul {
+    font-family: "Winky Rough";
+    margin-left: 50px;
+}
+h2 {
+    font-family: "Winky Rough";
+    margin: 0px;
 }
 
 .main {
+    flex-direction: row;
     display: flex;
-    flex-direction: column;
 }
 
-.cont1 > img, .cont2 > img {
-    height: 100px;
+img {
+    height: 150px;
     float: left;
     margin-right: 10px;
 }
 
-.heroname {
-    font-weight: 500;
-    font-size: 12pt;
-    display: inline-block;
-    margin: 0;
+.cont1, .cont2 {
+    flex: 1;
+    padding: 10px 50px;
 }
 
-.desc {
-    margin: 0;
-    font-weight: 300;
-    display: block;
+html {
+    background-color: rgb(255, 248, 238);
+}
+
+@media (max-width:770px) {
+    .main {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch; /* This will center the containers horizontally */
+    }
+
+    .cont1, .cont2 {
+        display: flex; /* Make the containers flex items */
+        flex-direction: column; /* Stack content vertically within the containers */
+        align-items: center; /* Center the image within its container */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    img {
+        float: none;
+        height: 210px;
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 10px; /* Add some space below the image */
+    }
 }
